@@ -21,6 +21,16 @@ public class Player {
         return sum;
     }
 
+    public int bestPerformance(){
+        int max = 0;
+        for (int i = 0; i < statistics.length; i++){
+            if (max < statistics[i]){
+                max = statistics[i];
+            }
+        }
+        return max;
+    }
+
     public String playerType(){
         Scanner input = new Scanner(System.in);
         System.out.println("Enter player type:");
@@ -34,6 +44,6 @@ public class Player {
         String battingStyle = input.next();
         return battingStyle;
     }
-    
+
 
 }
