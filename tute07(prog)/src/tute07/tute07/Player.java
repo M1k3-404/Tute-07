@@ -1,3 +1,5 @@
+package tute07;
+
 import java.util.*;
 
 public class Player {
